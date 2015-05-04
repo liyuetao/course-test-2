@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="component/fillblank/fillblank1.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="component/fillblank/fills-up.js"></script>
+    <script type="text/javascript" src="component/fillblank/keyboard.js"></script>
+    <script type="text/javascript" src="component/fillblank/fillblank1.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var template = Handlebars.templates["fillblank1"];
+            var component = addActivityComponent(data, fillUpBlank, template);
+            $(".box").append(component.container);
+            $("#sour").hide();
+					$('#audioPl').toggle(function(){
+						$("#sour")[0].play();
+					},function(){
+						$("#sour")[0].pause();
+					});
+            
+            var allBlank = $("input.tex");
+            for (var i = 0; i < allBlank.length; i++) {
+                allBlank[i].className = "";
+                $(allBlank[i]).addClass("tex").addClass("fb_blank");
+            }
+
+        });
+    </script>
+    <style>
+        .bold.order {
+            font-weight: bold;
+        }
+        
+        li {
+            display: inline;
+            float: left;
+            width: 350px;
+            line-height: 28px;
+        }
+        .right_side{
+            float: left;
+            width:30px;
+            position: relative;
+            left: -320px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header"><strong class="font_size">4a</strong> Following a description: diagrams, maps and plans</div>
+        <div class="title">Following directions on a map</div>
+        <div class="questions">
+            <span class="number">2</span>
+            <div class="title_list">
+                <p class="choose"><i id="audioPl"></i>Look at the five labels on the map, <strong>A–E</strong>. Listen and write which place each label represents.</p>
+
+                <audio id="sour" src="./media/29_12a_Information_Technology_1.mp3"></audio>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="box"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="right"><img src="img/main_pic.png" width="450" height="332">
+            </div>
+            <div id="skb" class="keyBox"></div>
+            <div class="annotation">
+                <div class="correct"></div><span>correct</span>
+                <div class="error"></div><span>error</span>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

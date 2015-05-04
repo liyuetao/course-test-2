@@ -1,0 +1,64 @@
+{
+    "course_id": "",
+	"type":"course",
+    "title": {
+        "en": "IELTS Course",
+        "zh": "雅思教材"
+    },
+    "publisher": "Cambridge University Press",
+    "author": [
+        "John Doe"
+    ],
+    "date_of_birth": "2015-03-31",
+    "publication_date": "2015-04-01",
+	"image":[],
+    "interface_language": [
+        "zh-CN",
+        "en-GB"
+    ],
+    "subject": {
+        "name": "English",
+        "sub_subject": {
+            "name": "Map labelling",
+            "sub_subject": {
+                "name": "IELTS",
+                "sub_subject": ""
+            }
+        }
+    },
+    "version": "1.0",
+    "description": {
+        "en": "",
+        "zh": ""
+    },
+    "objective": {
+        "en": "",
+        "zh": ""
+    },
+    "tags": [
+        "English",
+        "IELTS",
+        "Education"
+    ],
+    "level": [
+        {
+            "value": "4",
+            "standard": "CollegePre"
+        },
+        {
+            "value": "A",
+            "standard": "CEFR for Languages"
+        }
+    ],
+    "children": [
+        {
+            "order": "0",
+            "name": {
+                "en": "Lesson 1",
+                "zh": "第一课"
+            },
+            "type": "node",
+            "address": "lesson_1/index.json"
+        }
+    ]
+}

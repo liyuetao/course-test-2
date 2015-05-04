@@ -1,0 +1,389 @@
+{
+    "lesson_id": "",
+	"type": "lesson",
+    "title": {
+        "en": "Lesson One",
+        "zh": "第一课"
+    },
+    "author": [
+        "Cambridge University Press"
+    ],
+    "date_of_birth": "2014-04-10",
+    "publication_date": "2014-03-09",
+	"image":[],
+    "interface_language": [
+        "en-GB"
+    ],
+    "subject": {
+        "name": "English",
+        "sub_subject": {
+            "name": "Map Labelling",
+            "sub_subject": {
+                "name": "IELTS",
+                "sub_subject": {
+					"name": "Listening",
+					"sub_subject":""
+				}
+            }
+        }
+    },
+    "version": "1.0",
+    "description": {
+        "en": "",
+        "zh": ""
+    },
+    "objective": {
+        "en": "",
+        "zh": ""
+    },
+    "tags": [
+        "English",
+        "IELTS",
+		"Writing",
+        "Education",
+        "Foundation",
+        "In Class"
+    ],
+    "level": [
+        {
+            "value": "4",
+            "standard": "CollegePre"
+        },
+        {
+            "value": "A",
+            "standard": "CEFR for Languages"
+        }
+    ],
+    "children": [
+        {
+            "order": "0",
+			"bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id":"",
+					"name": {
+						"en": "Following directions on a map",
+						"zh": ""
+					},
+                    "type": "html",
+                    "interactive": "no",
+                    "interactive_type": {
+                        "type": "",
+                        "name": ""
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A1/core.html"
+                },
+                "supports": []
+            }
+        },
+        {
+            "order": "1",
+            "bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id": "",
+                    "name": {
+                        "en": "Following directions on a map",
+                        "zh": ""
+                    },
+                    "type": "html",
+                    "interactive": "yes",
+                    "interactive_type": {
+                        "type": "1104",
+                        "name": "fill in the blank"
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A2/core.html"
+                },
+                "supports": [
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "a map",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A4/core.html"
+                    }
+                ]
+            }
+        },
+		{
+            "order": "2",
+			"bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id":"",
+					"name": {
+						"en": "Following directions on a map",
+						"zh": ""
+					},
+                    "type": "html",
+                    "interactive": "yes",
+                    "interactive_type": {
+                        "type": "1104",
+                        "name": "fill in the blank"
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A5/core.html"
+                },
+                "supports": []
+			}
+        },
+		{
+            "order": "3",
+			"bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id":"",
+					"name": {
+						"en": "Following directions on a map",
+						"zh": ""
+					},
+                    "type": "html",
+                    "interactive": "no",
+                    "interactive_type": {
+                        "type": "",
+                        "name": ""
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A6/core.html"
+                },
+                "supports": [
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "a map",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A7/core.html"
+                    }
+                ]
+			}
+        },
+		{
+            "order": "4",
+			"bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id":"",
+					"name": {
+						"en": "Following directions on a map",
+						"zh": ""
+					},
+                    "type": "html",
+                    "interactive": "no",
+                    "interactive_type": {
+                        "type": "",
+                        "name": ""
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A8/core.html"
+                },
+                "supports": [
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for IELTS",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A9/core.html"
+                    },                    
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for map labelling",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A11/core.html"
+                    }
+                ]
+			}
+        },
+		{
+            "order": "5",
+			"bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id":"",
+					"name": {
+						"en": "Following directions on a map",
+						"zh": ""
+					},
+                    "type": "html",
+                    "interactive": "no",
+                    "interactive_type": {
+                        "type": "",
+                        "name": ""
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A12/core.html"
+                },
+                "supports": [
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for IELTS",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A13/core.html"
+                    },                    
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A14/core.html"
+                    },                    
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for map labelling",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A15/core.html"
+                    },                    
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for map labelling",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A16/core.html"
+                    },                    
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "Tips for map labelling",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A17/core.html"
+                    }
+                ]
+			}
+        }
+    ],
+    "glossary": [],
+    "grammar": [],
+    "sentence_pattern": "",
+    "pre_class": "",
+    "post_class": "homework.json"
+}

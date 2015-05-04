@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="component/fillblank/fillblank1.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="component/fillblank/fills-up.js"></script>
+    <script type="text/javascript" src="component/fillblank/keyboard.js"></script>
+    <script type="text/javascript" src="component/fillblank/fillblank1.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var template = Handlebars.templates["fillblank1"];
+            var component = addActivityComponent(data, fillUpBlank, template);
+            $(".box").append(component.container);
+        });
+    </script>
+<style>
+.headBar .title {background:url(./img/header.png) left top no-repeat;}    
+.subhead .subhead_style {background:url(./img/title.png) left top no-repeat; height:25px; padding-left:55px; color:#fff; font-size:20px; line-height:25px; margin:10px 0 30px 10px;}
+.subhead{padding-bottom: 15px;padding-top: 5px;}
+.number {display:block; width:30px; height:30px; background:#816097; float:left; text-align:center; line-height:30px; color:#fff; font-size:18px; margin-right:10px;}
+.title_list .choose {font-size:18px; line-height:30px;}    
+.right {position: absolute; left:560px;top:170px; width:450px;}    
+.tex {border:solid 3px #AA94B9; padding:3px; width:150px; margin:0 5px; background:#fff;}   
+.questions{padding-left: 35px;padding-bottom: 20px;}
+</style>
+    
+</head>
+
+<body>
+    <div class="box">
+        <div data-brackets-id="31" class="headBar">
+            <div data-brackets-id="32" class="title">
+                <span data-brackets-id="33" class="title_style">4a</span>
+                <span data-brackets-id="34" class="title_font">Following a description: diagrams, maps and plans</span>
+            </div>
+            <div data-brackets-id="35" class="headLine"></div>
+            <div data-brackets-id="36" class="title_right"></div>
+        </div>
+        <div data-brackets-id="37" class="subhead">
+            <div data-brackets-id="38">
+                <span data-brackets-id="40" class="subhead_style"><span data-brackets-id="41" >Following directions on a map</span><em data-brackets-id="42"></em>
+                </span>
+            </div>
+        </div>
+    <div class="questions">
+    	<span class="number">1</span>
+        <div class="title_list">
+        	<p class="choose">Look at the street map and then use the compass points to help you find somewhere that is:</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="right"><img src="img/main_pic.png" width="450" height="332">
+    </div>
+    </div>
+</body>
+
+</html>

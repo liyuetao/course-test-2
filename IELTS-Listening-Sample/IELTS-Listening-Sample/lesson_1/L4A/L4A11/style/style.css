@@ -1,0 +1,24 @@
+﻿* {padding:0; margin:0;}
+body {background-color:#fff;}
+body,ul,li,dl,dd,dt,ol,table,td,tr,div,h1,h2,h3,h4,h5,h6,span {padding:0; margin:0;font-size:17px; line-height:24px; font-family:Arial, Helvetica, sans-serif; color:#000;}
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0; font-weight:normal;}
+p,input,a {font-size:17px; font-family:Arial, Helvetica, sans-serif;}
+a {bblr:expression(this.onFocus=this.blur());/*IE使用*/outline-style:none;/*FF使用*/text-decoration:none;}
+li {list-style: none;}
+img {border: none;}
+input,select,textarea {outline: none; border: none; background: none;}
+textarea {resize: none;}
+.clear {clear:both; height:0;overflow:hidden;}
+.clearfix:after {content:" "; height:0px; display:block; clear:both; visibility:hidden;}
+.clearfix {zoom:1;}
+.wrap {margin:0 auto; width:1024px; clear:both;}
+
+.header {background:url(../img/header.png) left top no-repeat; height:35px; padding:18px 0 0 44px; font-size:20px; color:#000;}
+.header .font_size {font-size:26px;}
+.title {background:url(../img/title.png) left top no-repeat; height:25px; padding-left:55px; color:#fff; font-size:20px; line-height:25px; margin:10px 0 30px 10px;}
+.questions {width:968px; margin:0 auto; height:600px; position:relative;}
+.number {display:block; width:30px; height:30px; background:#fff; float:left; text-align:center; line-height:30px; color:#fff; font-size:18px; margin-right:5px;}
+.title_list {float:left; width:920px;}
+.choose {background:url(../img/star.png) left top no-repeat; min-height:45px; padding-left:60px; padding-top:10px;}
+.content {width:920px; clear:both;}
+.content span {background:#808080; color:#fff; padding:0 3px;}

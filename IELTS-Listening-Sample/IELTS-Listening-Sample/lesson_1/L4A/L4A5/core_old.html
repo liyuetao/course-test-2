@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="keyboard/keyboard.css">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/fills-up.js"></script>
+<script type="text/javascript" src="keyboard/keyboard.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+<script type="text/javascript">
+		//read
+		function readFn(){
+			var aInput=$('.tex');
+			var arr=[];
+			aInput.each(function(index,element){
+				$(aInput[index]).val()!='' && arr.push($(aInput[index]).val());
+				arr.length==index && arr.push('');
+			});
+			return '[{"order":"1","answer":"'+arr[0]+'"},{"order":"2","answer":"'+arr[1]+'"},{"order":"3","answer":"'+arr[2]+'"},{"order":"4","answer":"'+arr[3]+'"},{"order":"5","answer":"'+arr[4]+'"},{"order":"6","answer":"'+arr[5]+'"},{"order":"7","answer":"'+arr[6]+'"},{"order":"8","answer":"'+arr[7]+'"},{"order":"9","answer":"'+arr[8]+'"},{"order":"10","answer":"'+arr[9]+'"}';
+		}
+		//set
+		function setFn(str){
+			var aInput=$('.tex');
+			var json=eval('('+str+')');
+			for(var i=0; i<json.length; i++){	
+				aInput[i].value=json[i].answer;
+			}
+		}
+		//answer
+		var answers=[['hospital','Hospital'],['library','Hospital'],['statue','Statue'],['cafe','Cafe','café','Café'],['tennis courts','Tennis courts']];
+		//check answer
+		function checkAnswer(){
+			var aInput=$('.tex');
+			for(var i=0; i<answers.length; i++){
+				var result=false;
+				var arr=answers[i];
+				for(var j=0; j<arr.length; j++){
+					if(aInput[i].value==arr[j] || aInput[i].value==answers[i]){
+						result=true;
+						continue;
+					}
+				}
+				if(result){
+					$(aInput[i]).css({'background-color':'green','color':'white'});
+				}else{
+					$(aInput[i]).css({'background-color':'red','color':'white'});
+				}
+			}
+			aInput.attr('disabled',true);
+			$('.annotation').show();
+		}
+		//show answer
+		function showAnswer(){
+			refresh();
+			var aInput=$('.tex');
+			for(var i=0; i<answers.length; i++){
+				aInput[i].value=answers[i];
+				var arr=answers[i];
+				for(var j=0; j<arr.length; j++){
+					aInput[i].value=arr[j];
+				}
+			}
+			aInput.attr('disabled',true);
+		}
+		//refresh
+		function refresh(){
+			var aInput=$('.tex');
+			aInput.each(function(index,element){
+				if(aInput[index].value!='' || aInput[index].style.backgroundColor!='' || aInput[index].style.color!=''){
+					aInput[index].value='';
+					aInput[index].style.backgroundColor='';
+					aInput[index].style.color='';
+				}
+			})
+			aInput.attr('disabled',false);
+			$('.annotation').hide();
+		}
+	</script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="header"><strong class="font_size">4a</strong> Following a description: diagrams, maps and plans</div>
+    <div class="title">Following directions on a map</div>
+    <div class="questions">
+    	<span class="number">2</span>
+        <div class="title_list">
+        	<p class="choose"><i id="audioPl"></i>Look at the five labels on the map, <strong>A–E</strong>. Listen and write which place each label represents.</p>
+        	
+			<audio controls="controls" autoplay="autoplay" id="sour"></audio>
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main">
+    	<div class="left">
+    	<p class="list clearfix"><strong>A</strong><span>is the<input type="text" class="tex" >.</span></p>
+  		<p class="list clearfix"><strong>B</strong><span>is the<input type="text" class="tex" >.</span></p>
+        <p class="list clearfix"><strong>C</strong><span>is the<input type="text" class="tex" >.</span></p>
+        <p class="list clearfix"><strong>D</strong><span>is the<input type="text" class="tex" >.</span></p>
+        <p class="list clearfix"><strong>E</strong><span>is the<input type="text" class="tex" >.</span></p>
+        <div class="clear"></div>
+        </div><div class="right"><img src="img/main_pic.png" width="450" height="332"></div>
+       <div id="skb" class="keyBox"></div> 
+    <div class="annotation">
+		<div class="correct"></div><span>correct</span>
+		<div class="error"></div><span>error</span>
+	</div> 
+	</div>
+    
+    
+</div>
+</body>
+</html>

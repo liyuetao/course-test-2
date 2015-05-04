@@ -1,0 +1,134 @@
+{
+    "post_class_id": "",
+    "type": "lesson",
+    "title": {
+        "en": "Self Study",
+        "zh": "自学内容"
+    },
+    "author": [
+        "Cambridge University Press"
+    ],
+    "date_of_birth": "2014-04-10",
+    "publication_date": "2014-03-09",
+    "image": [],
+    "interface_language": [
+        "en-GB"
+    ],
+    "subject": {
+        "name": "English",
+        "sub_subject": {
+            "name": "Test Preparation",
+            "sub_subject": {
+                "name": "IELTS",
+                "sub_subject": {
+                    "name": "Writing",
+                    "sub_subject": ""
+                }
+            }
+        }
+    },
+    "version": "1.0",
+    "description": {
+        "en": "",
+        "zh": ""
+    },
+    "objective": {
+        "en": "",
+        "zh": ""
+    },
+    "tags": [
+        "English",
+        "IELTS",
+        "Writing",
+        "Education",
+        "Foundation",
+        "Self Study",
+        "Homework"
+    ],
+    "level": [
+        {
+            "value": "3",
+            "standard": "CollegePre"
+        },
+        {
+            "value": "B1",
+            "standard": "CEFR for Languages"
+        }
+    ],
+    "children": [
+        {
+            "order": "0",
+            "bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id": "",
+                    "name": {
+                        "en": "Following directions on a map",
+                        "zh": ""
+                    },
+                    "type": "html",
+                    "interactive": "yes",
+                    "interactive_type": {
+                        "type": "1104",
+                        "name": "fill in the blank"
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A2/core.html"
+                },
+                "supports": [
+                    {
+                        "order": "0",
+                        "support_id": "",
+                        "name": {
+                            "en": "a map",
+                            "zh": ""
+                        },
+                        "type": "html",
+                        "interactive": "no",
+                        "interactive_type": {
+                            "type": "",
+                            "name": ""
+                        },
+                        "tags": [],
+                        "data": "",
+                        "address": "L4A/L4A4/core.html"
+                    }
+                ]
+            }
+        },
+        {
+            "order": "1",
+            "bundle_id": "",
+            "name": {
+                "en": "Following a description: diagrams, maps and plans",
+                "zh": ""
+            },
+            "type": "leaf",
+            "bundle": {
+                "core": {
+                    "core_id": "",
+                    "name": {
+                        "en": "Following directions on a map",
+                        "zh": ""
+                    },
+                    "type": "html",
+                    "interactive": "yes",
+                    "interactive_type": {
+                        "type": "1104",
+                        "name": "fill in the blank"
+                    },
+                    "tags": [],
+                    "data": "",
+                    "address": "L4A/L4A5/core.html"
+                },
+                "supports": []
+            }
+        }
+    ]
+}

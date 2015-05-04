@@ -1,0 +1,24 @@
+﻿* {padding:0; margin:0;}
+body {background-color:#fff;}
+body,ul,li,dl,dd,dt,ol,table,td,tr,div,h1,h2,h3,h4,h5,h6,span {padding:0; margin:0;font-size:17px; line-height:24px; font-family:Arial, Helvetica, sans-serif; color:#000;}
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0; font-weight:normal;}
+p,input,a {font-size:17px; font-family:Arial, Helvetica, sans-serif;}
+a {bblr:expression(this.onFocus=this.blur());/*IE使用*/outline-style:none;/*FF使用*/text-decoration:none;}
+li {list-style: none;}
+img {border: none;}
+i,em {font-style:normal;}
+input,select,textarea {outline: none; border: none; background: none;}
+textarea {resize: none;}
+.clear {clear:both; height:0;overflow:hidden;}
+.clearfix:after {content:" "; height:0px; display:block; clear:both; visibility:hidden;}
+.clearfix {zoom:1;}
+.wrap {margin:0 auto; width:1024px; clear:both; height:700px; position:relative;}
+
+.header {background:url(../img/header.png) left top no-repeat; height:35px; padding:18px 0 0 44px; font-size:20px; color:#000;}
+.header .font_size {font-size:26px;}
+.title {background:url(../img/title.png) left top no-repeat; height:25px; padding-left:55px; color:#fff; font-size:20px; line-height:25px; margin:10px 0 30px 10px;}
+.questions {width:934px; margin:0 auto; height:600px; position:relative;}
+.content {background:url(../img/main_bg.jpg) left top repeat-x; min-height:272px; clear:both; padding:15px 20px; width:894px; margin:0px auto 0 auto;}
+.content .title_txt {font-weight:bold; font-size:18px; background:url(../commonImg/insets_01.png) left center no-repeat; padding-left:20px; line-height:30px;}
+.content .text {padding-left:20px; line-height:24px; margin-bottom:15px;}
+

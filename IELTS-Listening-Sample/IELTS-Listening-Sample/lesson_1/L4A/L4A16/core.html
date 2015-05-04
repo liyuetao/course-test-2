@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.sour').hide();	
+	$('.audioPl').toggle(function(){
+		$(this).parent().find("audio")[0].play();
+	},function(){
+		$(this).parent().find("audio")[0].pause();
+	});
+
+	});
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="header"><strong class="font_size">4a</strong> Following a description: diagrams, maps and plans</div>
+  <div class="title">
+    <p class="title_content">Tips for map labelling</p>
+    <img src="img/title_2.png" width="15" height="25"></div>
+  <div class="questions"> <span class="number"></span>
+    <div class="title_list">
+      <p class="txt">Use the pause before you listen to think about the words the speaker might use to describe
+the map or diagram.</p>
+<p><b>Example:</b> This example comes from a task relating to a motor show.</p>
+    </div>
+    <div class="mqc">
+      <div class="top">
+        <p style="line-height:45px;"><i class="audioPl"></i>
+          <audio class="sour" src="./media/29_12a_Information_Technology_1.mp3"></audio>
+          Listen and label the map below.</p>
+        <p class="text"><span>A</span> biofuels exhibit</p>
+        <p class="text"><span>B</span> caravans</p>
+        <p class="text"><span>C</span> in-car entertainment</p>
+        <p class="text"><span>D</span> sandwich bar</p>
+        <p class="text"><span>E</span> sat nav developments</p>
+        <p class="text"><span>F</span> sports car stand</p>
+        <p class="text"><span style=" padding:6px 9px;">G</span> tyre technology</p>
+        <div class="clear"></div>
+      </div>
+      <div class="pic"><img src="img/pic.png" width="503" height="333"><br>
+        <p><span>1</span><a style=" display:inline-block; width:80px; border-bottom:dashed 1px #000;"><span style="margin-left:20px;">C</span></a></p>
+        <p><span>2</span><a style=" display:inline-block; width:80px; border-bottom:dashed 1px #000;"><span style="margin-left:20px;">A</span></a></p>
+      </div>
+      <div style="position:relative">
+        <div class="content"> <i class="audioPl"></i>
+          <audio class="sour" src="./media/29_12a_Information_Technology_1.mp3"></audio>
+          <p class="list">When you get to the Motor Show you’ll find it’s in an enormous hall and it would be quite easy to miss some
+            of the most interesting exhibits, so I’d like to give you a bit of general information first. First of all, there is a
+            small stand to the left of the information desk as you go into the hall. That’s got a very interesting display
+            looking at <span>different modern technologies allowing you to listen to good quality music as you drive</span>. Next to
+            that, to the right of the information desk, is a very interesting area where you can see an area devoted to
+            the development of <span>more ecologically sound forms of petrol and diesel</span>. I think that you will be impressed
+            by what you see there.</p>
+          <div class="clear"></div>
+        </div>
+        <span style="position:absolute; right:0; top:100px;" class="kuai01">C</span> <a style=" position:absolute; right:20px; top:100px;display:inline-block; width:180px; border-bottom:dashed 1px #000;"></a> <span style="position:absolute; right:0; top:160px;" class="kuai01">A</span> <a style=" position:absolute; right:20px; top:160px;display:inline-block; width:360px; border-bottom:dashed 1px #000;"></a> </div>
+    </div>
+    <p style="padding-top:20px;"> <strong><i>Explanation:</i></strong> In this kind of activity you have to focus on what is in a specific place rather than on where something is. The numbers are on the map or diagram and you will hear them in the logical numerical order. It is unlikely though that the options will be referred to in exactly the same way as they are listed on the page. So you have to think in advance about how the recording might refer to the options. For example, if one of the options refers to 'biofuels' you might expect the speaker to use the words 'petrol' and 'diesel'. Similarly, when thinking about how 'in-car entertainment' could be paraphrased, you might predict the word 'music'. </p>
+  </div>
+</div>
+</body>
+</html>
